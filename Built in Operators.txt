@@ -1,0 +1,189 @@
+# Python code to demonstrate working of
+# add(), sub(), mul()
+# importing operator module
+import operator
+# Initializing variables
+a = 4
+b = 3
+# using add() to add two numbers
+print("The addition of numbers is :",operator.add(a, b))
+#or
+print("\nThe addition of numbers is :", end=" ")
+print(operator.add(a,b))
+print("\nThe delete of numbers is :", end=" ")
+x=['1','2','3','4','5','6','7']
+
+print(operator.delitem(['1','2','3','4','5','6','7'], '1'))
+
+
+
+print("\nThe addition of numbers is :", end=" ")
+# using sub() to subtract two numbers
+print("The difference of numbers is :", end=" ")
+print(operator.sub(a, b))
+
+# using mul() to multiply two numbers
+print("The product of numbers is :", end="")
+print(operator.mul(a, b))
+a = 18
+b = 5
+# using truediv() to divide two numbers
+print("The division of numbers is :", end='');
+print(operator.truediv(a, b))
+a = 18
+b = 5
+# using floordiv() to divide two numbers
+print("The floor division of numbers is : ", end="");
+print(operator.floordiv(a, b))
+# using pow() to exponentiate two numbers
+print("The exponentiation of numbers is : ", end="");
+print(operator.pow(a, b))
+
+# using mod() to take modulus of two numbers
+print("The modulus of numbers is : ", end="");
+print(operator.mod(a, b))
+
+# using lt() to check if a is less than b
+if (operator.lt(a, b)):
+    print("3 is less than 3")
+else:
+    print("3 is not less than 3")
+
+# using le() to check if a is less than or equal to b
+if (operator.le(a, b)):
+    print("3 is less than or equal to 3")
+else:
+    print("3 is not less than or equal to 3")
+
+# using eq() to check if a is equal to b
+if (operator.eq(a, b)):
+    print("3 is equal to 3")
+else:
+    print("3 is not equal to 3")
+    # using gt() to check if a is greater than b
+if (operator.gt(a, b)):
+    print("4 is greater than 3")
+else:
+    print("4 is not greater than 3")
+
+# using ge() to check if a is greater than or equal to b
+if (operator.ge(a, b)):
+    print("4 is greater than or equal to 3")
+else:
+    print("4 is not greater than or equal to 3")
+
+# using ne() to check if a is not equal to b
+if (operator.ne(a, b)):
+    print("4 is not equal to 3")
+else:
+    print("4 is equal to 3")
+
+
+
+# Python code to demonstrate working of
+# setitem(), delitem() and getitem()
+
+# importing operator module
+import operator
+
+# Initializing numbers
+li = [1, 5, 6, 7, 8]
+
+# printing original numbers
+print("The original numbers is : ", end="")
+for i in range(0, len(li)):
+    print(li[i], end=" ")
+
+print("\r")
+
+# using setitem() to assign 3 at 4th position
+operator.setitem(li, 3, 3)
+
+# printing modified numbers after setitem()
+print("The modified numbers after setitem() is : ", end="")
+for i in range(0, len(li)):
+    print(li[i], end=" ")
+
+print("\r")
+
+# using delitem() to delete value at 2nd index
+operator.delitem(li, 1)
+
+# printing modified numbers after delitem()
+print("The modified numbers after delitem() is : ", end="")
+for i in range(0, len(li)):
+    print(li[i], end=" ")
+
+print("\r")
+
+# using getitem() to access 4th element
+print("The 4th element of numbers is : ", end="")
+print(operator.getitem(li, 3))
+
+# printing original numbers
+print("The original numbers is : ", end="")
+for i in range(0, len(li)):
+    print(li[i], end=" ")
+
+print("\r")
+
+# using setitem() to assign 2,3,4 at 2nd,3rd and 4th index
+operator.setitem(li, slice(1, 4), [2, 3, 4])
+
+# printing modified numbers after setitem()
+print("The modified numbers after setitem() is : ", end="")
+for i in range(0, len(li)):
+    print(li[i], end=" ")
+
+print("\r")
+
+# using delitem() to delete value at 3rd and 4th index
+operator.delitem(li, slice(2, 4))
+
+# printing modified numbers after delitem()
+print("The modified numbers after delitem() is : ", end="")
+for i in range(0, len(li)):
+    print(li[i], end=" ")
+
+print("\r")
+
+# using getitem() to access 1st and 2nd element
+print("The 1st and 2nd element of numbers is : ", end="")
+print(operator.getitem(li, slice(0, 2)))
+
+# Initializing string 1
+s1 = "City Labs"
+
+# Initializing string 2
+s2 = "City Labs"
+
+# using concat() to concatenate two strings
+print("The concatenated string is : ", end="")
+print(operator.concat(s1, s2))
+
+# using contains() to check if s1 contains s2
+if (operator.contains(s1, s2)):
+    print("City Labs  Ideal Career Partner")
+else:
+    print("City Labs does not contain City Labs")
+
+a= 10
+b= 20
+# using and_() to display bitwise and operation
+print("The bitwise and of a and b is : ", end="")
+print(operator.and_(a, b))
+
+# using or_() to display bitwise or operation
+print("The bitwise or of a and b is : ", end="")
+print(operator.or_(a, b))
+
+# using xor() to display bitwise exclusive or operation
+print("The bitwise xor of a and b is : ", end="")
+print(operator.xor(a, b))
+
+# using invert() to invert value of a
+operator.invert(a)
+
+# printing modified value
+print("The inverted value of a is : ", end="")
+print(a) 

@@ -1,0 +1,349 @@
+Operators in Python
+
+"""
+What are operators in python?
+Operators are special symbols in Python that carry out arithmetic or logical computation.
+Operand : LHS or RHS
+a == b a and b is an operand == is an operator
+"""
+# Arithmetic Operators
+
+x = 2
+y = 5
+print("Addition of two number is = ", x + y)
+print("Subtraction of two number is = ", x - y)
+print("Multiplication of two number is = ", x * y)
+print("Division of two number is = ", x / y)
+print("Modulus of two number is = ", x % y)
+print("Exponential of two number is = ", x ** y)
+# (2* 2 * 2 * 2 *2)
+print("Floor Division of two number is = ", x // y)
+# (Converts to whole number the float value)
+
+
+#Comparison Operators
+
+# Comparison Operators
+# ==, != , <>, >,<=,
+x = 3  # (What operator ?) Assignment operator
+y = 6 # LHS - Left hand side compared with Right hand side
+"""
+int x // declaration 
+x // declaration
+x = 6 // assignment """
+
+
+# operand  operator operand 3, 6
+print('x == y  is', x == y)
+print('x != y  is', x != y)
+print('x < y  is', x < y)
+print('x > y  is', x > y)
+print('x <= y  is', x <= y)
+# compare value is less than or equal to 10
+# Loop x <= 10  ( Starting point 0 Ending 10 = [10] or [11]
+print('x >= y  is', x >= y)
+# >  x is bigger
+# >= x is biggeer or equal
+
+
+# Logical Operators
+
+"""Logical operators in Python are AND, OR and NOT.
+For logical operators following condition are applied.
+For AND operator – It returns TRUE if both the operands
+(right side and
+left side) are true
+For OR operator- It returns TRUE if either of the operand 
+(right side or left side) is true
+For NOT operator- returns TRUE if operand is false
+"""
+a = 50
+b = 60
+if a and b == 50:
+    print('Condition is True')
+else:
+    print('Condition is False')
+
+a = 50
+b = 60
+if a or b == 50:
+    print('Condition is True')
+else:
+    print('Condition is False')
+
+a = 50
+b = 60
+if not a >= 50:
+    print('Condition is True')
+else:
+    print('Condition is False')
+# or
+print('Not a is', not a >= 60)
+"""
+else:
+    print('Condition is false because one value is = 50')
+if a or b == 50:
+     print('Condition is true because one value is = 50')
+else:
+     print('Condition is false because both values are not = 50')
+if not a >= 60:
+     print('Condition is true because one value is not > 60')
+else:
+     print('Condition is false because a values is not = 50')
+print('not a is', not a >=50)
+"""
+
+# Membership Operators
+
+"""
+A Membership Operator in Python can be defined as being an
+operator
+that is used to validate the membership of a value.
+This operator
+is used to test memberships
+in variables such as strings, integers as well as tuples
+"""
+list1 = [1, 2, 3, 4, 5]
+
+x = 4
+if (x in list1):
+   print("Value found - x is available in the given list")
+else:
+   print("Value not found - x is not available in the given list")
+y = 4
+if (y not in list1):
+   print("Value not found - y is not available in the given list")
+else:
+   print("Value found - y is available in the given list")
+
+
+
+
+
+"""The identity operators in Python are used to determine whether
+ a value is of a certain class or type.
+They are usually used to determine the type of data a certain
+variable contains.
+For example, you can combine the identity operators with the
+built-in type() function to ensure that you are working with the
+specific variable type.
+Two identity operators are available in Python:
+
+is – returns True if the type of the value in the right operand
+points to the same type in the left operand.
+For example, type(3) is int evaluates to True because 3 is
+indeed an integer number.
+is not – returns True"""
+x = 3
+y = 3.4
+print(type(x))
+print(type(y))
+if x is y:   # x and y (are operands) and [is] is an (operator)
+    print("Yes both are of same identity  - IS - x & y")
+if x is not y:  # x and y (are operands) and [is] is an (operator)
+    print("No both are not of same identity - IS NOT x & y ")
+
+# Identity Operators
+
+# y = 6.6  # Condition is true
+# if x is not y:
+#     print("x & y have different identity")
+# x = 5
+if type(x) is int:
+    print("X is integer data type")
+else:
+    print("X is not integer data type")
+# #True
+# print(type(x) is not float)
+# #True
+# y = 3.23
+# print(type(y) is not float)
+# #False
+# print(type(y) is int)
+# #False
+#
+#
+# # Operator precedence
+# v = 4
+# w = 5
+# x = 8
+# y = 2
+# z = 0
+# z = (v+w) * x / y;
+# print("Value of (v+w) * x/ y is ",  z)
+
+
+
+# Assignment Operators
+
+"""Assignment operators 
+are used in Python to assign values to variables.
+a = 5 is a simple assignment operator that assigns the
+value 5 on the right to the variable a on the left.
+
+There are various compound operators in Python like a += 5
+that adds to the variable and later assigns the same"""
+# Various assignment operators used in Python are
+# Operator	Example	    Same As
+# +=	    x += 3	    x = x + 3
+# -=	    x -= 3	    x = x - 3
+# *=	    x *= 3	    x = x * 3
+# /=	    x /= 3	    x = x / 3
+# %=	    x %= 3	    x = x % 3
+# //=	    x //= 3	    x = x // 3
+# **=	    x **= 3	    x = x ** 3
+# &=	    x &= 3	    x = x & 3
+# |=	    x |= 3	    x = x | 3
+# ^=	    x ^= 3	    x = x ^ 3
+# >>=	    x >>= 3	    x = x >> 3
+# <<=	    x <<= 3	    x = x << 3
+
+num1 = 5
+num2 = 5
+res = num1 + num2
+print("Line 1 - Result of + is ", res)
+# "10"
+res += num2
+print("Line 1 - Result of + is ", res)
+#
+res -= num2
+print("Line 1 - Result of + is ", res)
+res *= num1
+print("Line 1 - Result of * is ", res)
+res /= num1
+print("Line 1 - Result of / is ", res)
+#      3 6 1
+n1 = 10 # 8/2 = 4 Remainder = 0
+       # 9/2 = 1 Remainder
+
+#-------------
+n2 = 2
+n1 %= n2
+print("Line 1 - Result of + is ", n1)
+# It will store remainder of divion on the LHS
+
+n1 = 10
+n2 = 2
+n1 /= n2 # 5.0
+print("Line 1 - Result of + is ", n1)
+# By default it will be float value in result
+n1 = 10
+n2 = 2
+n1 //= n2 # 5
+print("Line 1 - Result of + is ", n1)
+# Convert into whole number
+
+n1 = 2
+n2 = 3
+n1 *= n2
+print("Line 1 - Result of + is ", n1)
+#
+
+n1 = 5
+n2 = 3
+n1 **= n2 # ( 2 * 2 * 2) (5 * 5 * 5)
+print("Line 1 - Result of + is ", n1)
+
+n1 = 8
+n2 = 5
+n1 >= n2 #
+print("Line 1 - Result of + is ", n1)
+
+n1 = 6
+n2 = 7
+n1 >>= n2 #
+print("Line 1 - Result of + is ", n1)
+
+n1 = 3
+n2 = 2
+result = n1 > n2 # True
+print("Line 1 - Result of + is ", result)
+
+n1 = 30
+n2 = 6
+n1 >>= n2
+result = n1
+print("Line 1 - Result of + is ", result)
+
+
+# Bitwise Operators
+
+import operator
+
+List1 = ["A", "B","C"]
+L2 = [] # Empty List
+L2 = operator.delitem(List1, 1)
+
+"""
+Bitwise operators are characters that represent actions 
+to be performed on single bits. A bitwise operation 
+operates on two-bit patterns of equal lengths by 
+positionally matching their individual bits: 
+A logical AND (&) of each bit pair results in a 1 if the 
+first bit is 1 AND the second bit is 1
+"""
+# Operator	                Description	                                                                                    Example
+# & Binary AND	            Operator copies a bit to the result if it exists in both operands	                            (a & b) (means 0000 1100)
+# | Binary OR	            It copies a bit if it exists in either operand.	                                                (a | b) = 61 (means 0011 1101)
+# ^ Binary XOR	            It copies the bit if it is set in one operand but not both.	                                    (a ^ b) = 49 (means 0011 0001)
+# ~ Binary Ones             Complement	It is unary and has the effect of 'flipping' bits.	                                (~a ) = -61 (means 1100 0011 in 2's complement form due to a signed binary number.
+# << Binary Left Shift	    The left operands value is moved left by the number of bits specified by the right operand.	    a << 2 = 240 (means 1111 0000)
+# >> Binary Right Shift	    The left operands value is moved right by the number of bits specified by the right operand.	a >> 2 = 15 (means 0000 1111)
+
+
+
+
+
+# Examples of Bitwise operators
+a = 0
+b = 1
+
+# Print bitwise AND operation
+print("Print bitwise AND operation", a & b)
+# Print bitwise OR operation
+#print(a | b)
+# Print bitwise NOT operation
+print("Print bitwise OR operation", a|b)
+# print bitwise XOR operation
+print("Print bitwise XOR operation", a ^ b)
+# print bitwise right shift operation
+#print(a >> 2)
+# print bitwise left shift operation
+print("print bitwise right shift operation",a << 2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

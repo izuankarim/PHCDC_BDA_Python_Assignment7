@@ -1,0 +1,393 @@
+# List 
+
+# List is a collection which is ordered and changeable.
+# Allows duplicate members.
+# Tuple is a collection which is ordered and unchangeable.
+# Allows duplicate members.
+# Set is a collection which is unordered and unindexed. No duplicate members.
+# Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.
+# Array
+# L1 = ['A', 'B', 'C', 'D']
+# print(L1) # Printing all the items inside the list
+# L1[1:3] = 'BB','CC','DD'
+# print(L1)
+# L1.append('E')
+# print(L1[0]) # Printing specific item from the list
+# print(L1[1]) # Printing specific item from the list
+# print(L1[2]) # Printing specific item from the list
+# print(L1[3]) # Printing specific item from the list
+# print(L1[4]) # Printing specific item from the list
+# print("Printing from Index Range")
+# print(L1[0:3]) # Printing from Index Range
+# print(L1[0:4]) # Printing from Index Range
+
+# L1 = ['Python', 'Django', 'C++', 'Delphi']
+# print("Printing from negative Index")
+# print(L1[0:3]) # Printing from Index Range
+# print(L1[-3]) # Printing single element using negative index
+# print(L1[-3:-1]) # Printing Negative index range
+# #print(L1[-1]) # Printing specific item from the list
+
+L1 = ['Python', 'Django', 'C++', 'Delphi']
+# We want to change element of List with another value
+# L1 = ['Python', '.Net', 'C++', 'Delphi']
+"""
+# Inserting
+L1[1] = '.Net'
+
+L1[1:3]= ['.Net', 'Php', 'ASP.Net']
+
+# Appending
+L2 = 'Ruby on Rails', 'Machine Learning', 'AI'
+L1.append(L2)
+print(L1)
+
+# Empty List
+L3 = []
+A = ['.Net', 'Php', 'ASP.Net']
+L3.append(A)
+print(L3)
+"""
+# How to print Sub List form the main List
+print("Printing main list before adding Sublist")
+print(L1)
+A = ['.Net', 'Php', 'ASP.Net']
+print("Printing main list after adding Sublist")
+L1.append(A)
+print(L1)
+
+print("This is the value extracted from Sub List", L1[4][0])
+print("This is the value extracted from Sub List", L1[4][1])
+print("This is the value extracted from Sub List", L1[4][2])
+# print(L1[4][0])
+# print(L1[4][1])
+
+# We want to delte CC from the final list
+L1.remove('Python')
+print(L1)
+
+#L1.clear()
+print(L1)
+
+
+L1 = ['Python', 'Django', 'C++', 'Delphi']
+"""
+   #     0          1        2      3
+   #    -4         -3       -2     -1
+print("Printing Entire List")
+print(L1)
+print("Printing List by Index Number")
+print("This is the first element of List:",L1[0], end='-')
+print(L1[1], end='-')
+print(L1[2], end='-')
+print(L1[3])
+print("Printing List by using range")
+print(L1[0:4])
+print("Printing List by using Negative range")
+print(L1[-4:-1]) # Two Items -3 and -2 (0  =  10) -
+# (Start from 0 until 9)
+print("Printing all the values with indefinite range",L1[-5:])
+print("Printing all the values with indefinite range in reverse "
+      "order",L1[::-1])
+print("Creating Empty List")
+L2 = []# Defining Empty List
+print(L1)
+L2 = []
+L2.append('A')
+L2.append('B')
+L2.append('C')
+print(L2)
+print("List after appending ", L1)
+L2 = ["ASP.Net","C#", "Java" ]
+#L2[1] = "C++"
+#L2[2] = "Python"
+L2[0:2] = "C++" , "Python"
+print(L2)
+L2[0:2] = ["C++" , "Python"]
+print(L2)
+L1.append(L2)
+# Append has created list within the list
+print(L1)
+# How we need to print Sub list or List within the list
+print("Printing SubList Element 0 : ", L1[4][0])
+print("Printing SubList Element 1 : ", L1[4][1])
+print("Printing SubList Element 2 : ", L1[4][2])
+print("Printing SubList Element - : ", L1[-1][-2])
+print("Printing SubList Element [4][2] : ", L1[4][2])
+print("Printing SubList Element [-1][-1] : ", L1[-1][-1])
+print("Printing SubList Element [-1][-2] : ", L1[-1][-2])
+print("Printing SubList Element [-1][-3] : ", L1[-1][-3]) # C++
+print("Printing SubList Element [4][0] : ", L1[4][0])  # C++
+#print("Printing -2 Element of Main List in Nested List [-2] : ",L1[-2])
+#print("Printing SubList Element [-3] : ", L1[-3])
+['Python', 'Django', 'C++', 'Delphi', ['C++', 'Python', 'Java']]
+ # 0          1        2      3         4[0]    4[1]      4[2]
+ # -5         -4     -3      -2       -1[-3]   -1[-2]    -1[-1]
+x = 10
+print(x)# only one value
+x, y = 20,10     # We are assigning values to two variables
+print(x,y)
+x = [10,20,30,40]   # We are assigning multiple values to one vraible
+print(x[3])
+"""
+
+L1 = ['Python', 'Django', 'C++', 'Delphi']
+L1.remove("Python")
+print("How to Remove Elements from List")
+print(L1)
+print("How to Copy Elements from one List to another")
+L2 = L1.copy()
+print(L2)
+print("How to Sort List in asc Order")
+L2.sort()
+print(L2)
+print("How to Sort List in desc Order")
+L2.reverse()
+print(L2)
+print("How to Pop List using index value ")
+L3 = L2.pop(0)
+#or
+print("How to Pop List ")
+L2.pop()
+L2.pop()
+
+print(L2)
+# This will remove the last element of the List
+L1 = ['Python', 'Django', 'C++', 'Delphi', "Python", "Java"]
+print("How to count List Elements")
+L1.count("Python")
+print(L1.count("Python"))
+
+print("How to count Total Number of List Elements")
+len(L1)
+print(len(L1))
+
+L1.clear()
+print(L1)
+L1 = ["C","C++","C#","Java", "Python"]
+for items in L1:
+
+    print("Items of L1 = ", items)
+
+for items in L1:
+
+ print(items, end=',')
+ print()
+L2 =[]
+for x in L1:
+    L2.append(x)
+print("Appending Multiple Records in L2", L2)
+
+# L2[2] = L1[2]
+
+"""
+
+# Nested List
+NewList = [1, 'B', "C", ['A', 'B', 'C']]
+print(NewList)
+# print (D)
+# 016-3788499
+
+print(NewList[3][0], end=', ')
+print(NewList[3][2])
+lst = ['Ajay', 'Bobby','Ashok', 'Vijay', 'Anil', 'Rahul','Alex', 'Christopher']
+print (lst[1:])
+print (lst[0:])
+print (lst[2:-2]) # all elements starting from third element but skips the last two elements.
+print (lst[::2])  # this will print all alternate elements (begin to end in steps of 2)
+print (lst[::-1]) # this will print all elements in reverse order
+print("Test")
+
+print (L1[-4:-1])
+"""
+
+
+
+#  Assignment Answer
+
+# List in Python
+x = 20
+y = 40
+z = 50
+#print (x,y,z)
+
+# List represents array in Pyhton
+List = [70,20,40,90,50,60]
+print (List)
+print(List.index(50))
+# Manipulation of List
+
+# 1 for Present and 0 for Absent
+List_Attendance=[1,1,1,1,0,1,1,0,1,1,1,0,1,0,1,1,1,1]
+
+# Absenteesim of Employee
+print("Lim was absent in March for " ,
+List_Attendance.count(0), "days")
+
+print("Lim was presnt in March for " ,
+List_Attendance.count(1), "days")
+
+# Sublist - List within the list
+Att = [[0,1,1,1,0], [0,0,1,1,1] ,[0,1,1,1,1]]
+print("\n")
+print("Printing attenance before Editing")
+
+print("Mr. Lim's Attendance ",   Att[0][0:5])
+print("Ms. Kim's Attendance ",   Att[1][0:5])
+print("Mr. Jagjit's Attendance ",Att[2][0:5])
+
+print("\n")
+print("Printing attenance after Editing")
+"""
+Att[0][0] = 1
+Att[1][0] = 1
+Att[2][0] = 1
+
+print("Mr. Lim's Attendance ",   Att[0][0:5])
+print("Ms. Kim's Attendance ",   Att[1][0:5])
+print("Mr. Jagjit's Attendance ",Att[2][0:5])
+"""
+#Att[0:2][0]= 2,2
+
+
+for i in range (len(Att)):
+     Att[i][0] = 1
+print("\n")
+print("Mr. Lim's Attendance ",   Att[0][0:5])
+print("Ms. Kim's Attendance ",   Att[1][0:5])
+print("Mr. Jagjit's Attendance ",Att[2][0:5])
+
+
+"""
+
+
+# Sorting
+print(List.sort())
+Sorted = sorted(List)
+print(Sorted)
+
+#Reverse Sorting
+List.reverse()
+print(List)
+
+
+
+# Copy List
+
+List2 = List.copy()
+print("This is my copied list", List2)
+
+List3 = List2
+print("This is another way of copy ",List3)
+
+
+
+
+List.pop(0) # It removes value using index number
+print(List)
+
+List.remove(50) # It removes value using exact value
+print(List)
+
+List.clear()
+print(List)
+
+List2 =[1,2,3]
+List.append(List2)
+print(List)
+
+List.count(30)
+print(List.count(30))
+
+
+
+
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+append() - Add an element to the end of the list
+extend() - Add all elements of a list to the another list
+insert() - Insert an item at the defined index
+remove() - Removes an item from the list
+pop() - Removes and returns an element at the given index
+clear() - Removes all items from the list
+index() - Returns the index of the first matched item
+count() - Returns the count of the number of items passed as an argument
+sort() - Sort items in a list in ascending order
+reverse() - Reverse the order of items in the list
+copy() - Returns a shallow copy of the list
+
+
+"""
+
+
+
+"""
+#Editing List 
+
+List[0] = 100
+print(List)
+
+List[0:2] = 100 , 200, 300
+print(List)
+
+List[3:5] = [400 , 500, 600]
+print(List)
+
+print (List[0:5])
+
+
+
+print("Printing List from Index Range")
+print(List [0:1])
+print(List [0:2])
+print(List [0:3])
+print(List [0:4]) # Ending Index Value
+print(List [0:5]) # Out of range but no error
+print(List [0:6])
+
+print("Printing List from Negative Index Range")
+print(List [-5:0])
+print(List [-5:-1])
+print(List [-5:-2])
+print(List [-5:-3])
+print(List [-5:-2])
+print(List [-5:-1])
+print(List [-7:-1])
+
+
+
+
+print("Printing List from Positive Index")
+# List Operations
+print(List[0]) # Fetching the value of List item from index
+print(List[1])
+print(List[2])
+print(List[3])
+print(List[4])
+print("Printing List from Negative Index")
+print(List[-1])
+print(List[-2])
+print(List[-3])
+print(List[-4])
+print(List[-5])
+
+"""
+
+
+
+
+
